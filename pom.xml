@@ -35,7 +35,7 @@
 							<goal>make-xar</goal>
 						</goals>
 						<configuration>
-							<descriptor>../${project.artifactId}/assembly.xml</descriptor>
+							<descriptor>assembly.xml</descriptor>
 							<finalName>expath-${project.artifactId}-exist-lib-${project.version}</finalName>
 						</configuration>
 					</execution>
