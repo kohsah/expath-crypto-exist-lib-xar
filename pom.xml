@@ -3,7 +3,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>ro.kuberam.xars.expath-exist-libs</groupId>
+	<parent>
+		<artifactId>base</artifactId>
+		<groupId>ro.kuberam.xars</groupId>
+		<version>0.0.3</version>
+	</parent>
+
 	<artifactId>crypto</artifactId>
 	<version>0.3.3</version>
 	<packaging>pom</packaging>
@@ -18,35 +23,14 @@
 		<package-name>http://expath.org/lib/${project.artifactId}</package-name>
 		<package-abbrev>expath-${project.artifactId}-exist-lib</package-abbrev>
 		<package-type>application</package-type>
+		<package-final-name>expath-${project.artifactId}-exist-lib-${project.version}</package-final-name>
 	</properties>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>ro.kuberam.maven.plugins</groupId>
-					<artifactId>kuberam-expath-plugin</artifactId>
-					<version>0.4.4</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>ro.kuberam.maven.plugins</groupId>
 				<artifactId>kuberam-expath-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>create-xar</id>
-						<phase>package</phase>
-						<goals>
-							<goal>make-xar</goal>
-						</goals>
-						<configuration>
-							<descriptor>assembly.xml</descriptor>
-							<finalName>expath-${project.artifactId}-exist-lib-${project.version}</finalName>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
