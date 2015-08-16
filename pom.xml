@@ -20,7 +20,7 @@
 
 	<properties>
 		<package-title>EXPath Cryptographic Module Implementation</package-title>
-		<package-name>http://expath.org/lib/${project.artifactId}</package-name>
+		<package-name>http://expath.org/ns/${project.artifactId}</package-name>
 		<package-abbrev>expath-${project.artifactId}-exist-lib</package-abbrev>
 		<package-type>application</package-type>
 		<package-final-name>expath-${project.artifactId}-exist-lib-${project.version}</package-final-name>
