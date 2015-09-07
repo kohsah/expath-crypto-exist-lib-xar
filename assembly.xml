@@ -18,12 +18,12 @@
 		<dependencySet>
 			<groupId>org.expath.exist</groupId>
 			<artifactId>crypto</artifactId>
-			<version>0.3.2</version>
+			<version>0.3.3</version>
 		</dependencySet>
 		<dependencySet>
 			<groupId>ro.kuberam.libs.java</groupId>
 			<artifactId>crypto</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.2</version>
 		</dependencySet>
 	</dependencySets>
 </package>
